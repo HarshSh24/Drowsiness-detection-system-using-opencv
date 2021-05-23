@@ -14,7 +14,7 @@ def detect(gray, frame):
         cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = frame[y:y+h, x:x+w]
-        eyes = eye_cascade.detectMultiScale(roi_gray, 1.1, 3)
+        eyes = eye_cascade.detectMultiScale(roi_gray, 1.5, 3)
         if len(eyes)==0:
             cv2.putText(frame,"DROWSY",(x,y),cv2.FONT_HERSHEY_SIMPLEX,1,(255, 255, 0),2)
         else:
