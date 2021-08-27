@@ -2,13 +2,10 @@
 The drowsiness detection system can be used in cars to detect of the driver is sleepy or not which can prevent accidents.
 Steps to run:
 Clone this repo.
-Run code(.py file) on any python ide. Press q to exit live window.
-For audio enabled, first install pyttsx3 and speech recognition module using pip coomand in terminal.
-Sar "activate" to start the audio enabled app.
-Or, run following commands in terminal
-pip install SpeechRecognition
+Open terminal and install the requirements by following commands:
 pip install pyttsx3
 pip install pipwin
-pipwin install pyaudio
-python "complete file path"
-say "activate" to start.
+pipwin install SpeechRecognition
+After the installation, run audio_enabled_detection.ipynb in jupyter notebook.
+Say "activate" to start, system will reply "activating now" when started.
+press q to exit open cv window.
